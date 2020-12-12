@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       # login failed
-      flash.now[:error] = "There was something wrong with your login information"
+      flash.now[:error] = "There was something wrong with your login information please try again"
       render 'new'
     end
   end
