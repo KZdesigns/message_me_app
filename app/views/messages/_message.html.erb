@@ -2,6 +2,9 @@
   <div class="content">
     <div class="summary">
       <em><%= message.user.username %></em>: <%= message.body %>
+      <div>
+        <em class="muted-text">Sent: <%= time_ago_in_words(message.created_at) %> ago</em>
+      </div>
 
 </div>
   </div>
